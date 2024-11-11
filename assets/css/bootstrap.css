@@ -5147,6 +5147,21 @@ a.badge:hover, a.badge:focus {
   border-radius: 10rem;
 }
 
+.badge-purple {
+  color: #fff;
+  background-color: #6f42c1;
+}
+
+a.badge-purple:hover, a.badge-purple:focus {
+  color: #fff;
+  background-color: #7b54c2;
+}
+
+a.badge-purple:focus, a.badge-purple.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.5);
+}
+
 .badge-primary {
   color: #fff;
   background-color: #007bff;
