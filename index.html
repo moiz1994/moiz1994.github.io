@@ -20,7 +20,7 @@
   
   <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
   
-  <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css"> -->
   
   <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
 
@@ -29,6 +29,16 @@
   <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
   
   <link rel="stylesheet" type="text/css" href="assets/css/minibar.virtual.css">
+
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("Jbfj8g-HcWZ6VWxWv");
+    })();
+  </script>
+  <script src="assets/js/sendEmail.js"></script>
 </head>
 <body class="theme-purple">
   
@@ -74,7 +84,7 @@
   
   <div class="topbar-nav fixed-top">
     <div class="brand">
-      <img src="assets/favicon.ico" alt="" width="30" height="30">
+      <img src="assets/favicon.png" alt="" width="30" height="30">
     </div>
     <h3 class="ml-1">Gram</h3>
     <button class="btn-fab toggle-menu mr-3"><span class="ti-menu"></span></button>
@@ -113,12 +123,12 @@
             <span class="caption">Portfolio</span>
           </a>
         </li>
-        <li class="menu-item">
+        <!-- <li class="menu-item">
           <a href="#blog" class="menu-link">
             <span class="icon ti-book"></span>
             <span class="caption">Blog</span>
           </a>
-        </li>
+        </li> -->
         <li class="menu-item">
           <a href="#contact" class="menu-link">
             <span class="icon ti-location-pin"></span>
@@ -162,6 +172,8 @@
                 <li class="fg-dark"><b>From:</b> Sukkur, Sindh, Pakistan</li>          
                 <li class="fg-dark"><b>Age:</b> 30</li>
                 <li class="fg-dark"><b>Gender:</b> Male</li>
+                <li class="fg-dark"><b>Contact No:</b> +92 333 7588041</li>
+                <li class="fg-dark"><b>Email:</b> moizwaseem94@gmail.com</li>
               </ul>
               <button class="btn btn-theme btn-rounded">Download CV</button>
             </div>
@@ -283,34 +295,40 @@
           </div>
         </div>
       </div>
-    </div> <!-- End page services -->
+    </div> 
+    <!-- End page services -->
     
     <!-- Testimonials -->
     <div class="vg-page p-0" id="testimonial">
       <div class="owl-carousel testi-carousel" style="background-image: url(assets/img/photo-2.jpg);">
         <div class="item">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, dicta atque. Voluptas illum quasi asperiores autem unde cupiditate temporibus quisquam iste rem dignissimos. Commodi placeat, quis omnis inventore asperiores sit.</p>
-          <span class="iconic">
+          <p>"I had the pleasure of working with Moiz on two project a WordPress site and a Shopify store and I couldn’t be happier with the results. He really knows his stuff when it comes to both platforms. The WordPress site he built for us is fast, responsive, and looks amazing. For the Shopify store, he nailed the design, customized everything to match our brand, and even set up some great integrations that made things super smooth. What stood out most was how easy it was to work with him. He kept me updated, was always open to feedback, and delivered everything on time. If you’re looking for someone reliable and skilled in web development, Moiz is your guy. I’d definitely work with him again!"</p>
+          <!-- <span class="iconic">
             <span class="ti-quote-left"></span>
-          </span>
-          <h4>Andrew Johanson</h4>
+          </span> -->
+          <h4>Usama Waseem</h4>
         </div>
         <div class="item">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, dicta atque. Voluptas illum quasi asperiores autem unde cupiditate temporibus quisquam iste rem dignissimos. Commodi placeat, quis omnis inventore asperiores sit.</p>
-          <span class="iconic">
+          <p>"Working with Moiz Waseem has been a game-changer for our organization. The employee app he developed for us is not just functional but incredibly user-friendly. It has streamlined multiple HR processes, including leave applications, attendance tracking, and IT helpdesk support. Employees now have access to all the information they need at their fingertips, making their experience seamless and efficient.
+
+            The app’s intuitive design and reliable performance have significantly improved employee satisfaction and productivity. Moiz demonstrated exceptional technical expertise and professionalism throughout the project, delivering a robust solution tailored to our needs. We highly recommend his services to anyone looking for innovative mobile app development!"</p>
+          <!-- <span class="iconic">
             <span class="ti-quote-left"></span>
-          </span>
-          <h4>Louis Herreira</h4>
+          </span> -->
+          <h4>Faisal Malik</h4>
         </div>
         <div class="item">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, dicta atque. Voluptas illum quasi asperiores autem unde cupiditate temporibus quisquam iste rem dignissimos. Commodi placeat, quis omnis inventore asperiores sit.</p>
-          <span class="iconic">
+          <p>"Moiz Waseem delivered an outstanding secondary sales app for our team, and it has completely transformed the way we manage our sales operations. The app allows our employees to efficiently take orders from retailers while providing real-time insights into key performance metrics such as order completion rates, productivity, and overall performance.
+
+            The seamless functionality and easy-to-use interface have empowered our sales team to work smarter, not harder. Managers now have the tools they need to track and optimize performance, which has led to improved accountability and increased sales efficiency. Moiz’s attention to detail and commitment to understanding our unique business needs were truly impressive. We are extremely satisfied with the results and highly recommend his expertise!"</p>
+          <!-- <span class="iconic">
             <span class="ti-quote-left"></span>
-          </span>
-          <h4>Patrice Clark</h4>
+          </span> -->
+          <h4>Asif Khan</h4>
         </div>
       </div>
-    </div> <!-- End testimonial -->
+    </div> 
+    <!-- End testimonial -->
     
     <!-- Portfolio page -->
     <div class="vg-page page-portfolio" id="portfolio">
@@ -322,77 +340,90 @@
         <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
           <button class="btn btn-theme-outline selected" data-filter="*">All</button>
           <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
-          <button class="btn btn-theme-outline" data-filter=".template">Template</button>
-          <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
-          <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
-          <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
-          <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+          <button class="btn btn-theme-outline" data-filter=".websites">Websites</button>                            
         </div>
 
         <div class="gridder my-3">
+
           <div class="grid-item apps wow zoomIn">
-            <div class="img-place" data-src="assets/img/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
-              <img src="assets/img/work/work-1.jpg" alt="">
+            <div class="img-place" data-src="assets/img/work/ssis.png" data-fancybox data-caption="<h5 class='fg-theme'>Secondary Sales App</h5>">
+              <img src="assets/img/work/ssis.png" alt="">
               <div class="img-caption">
-                <h5 class="fg-theme">Mobile Travel App</h5>
-                <p>Travel, Discovery</p>
+                <h5 class="fg-theme">Secondary Sales App</h5>                
               </div>
             </div>
           </div>
-          <div class="grid-item template wireframes wow zoomIn">
-            <div class="img-place" data-src="assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
-              <img src="assets/img/work/work-2.jpg" alt="">
+
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/hrms.png" data-fancybox data-caption="<h5 class='fg-theme'>HR Management App</h5>">
+              <img src="assets/img/work/hrms.png" alt="">
               <div class="img-caption">
-                <h5 class="fg-theme">Music App</h5>
-                <p>Musics</p>
+                <h5 class="fg-theme">HR Management App</h5>                
               </div>
             </div>
           </div>
-          <div class="grid-item apps ios wow zoomIn">
-            <div class="img-place" data-src="assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
-              <img src="assets/img/work/work-3.jpg" alt="">
+
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/fms.png" data-fancybox data-caption="<h5 class='fg-theme'>Vehicle Fuel Management App</h5>">
+              <img src="assets/img/work/fms.png" alt="">
               <div class="img-caption">
-                <h5 class="fg-theme">Gaming Dashboard</h5>
-                <p>Games, Streaming</p>
+                <h5 class="fg-theme">Vehicle Fuel Management App</h5>                
               </div>
             </div>
           </div>
-          <div class="grid-item graphic ui-ux wow zoomIn">
-            <div class="img-place" data-src="assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
-              <img src="assets/img/work/work-4.jpg" alt="">
+
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/mem.png" data-fancybox data-caption="<h5 class='fg-theme'>Cooler Management App</h5>">
+              <img src="assets/img/work/mem.png" alt="">
               <div class="img-caption">
-                <h5 class="fg-theme">Drugs Delivery App</h5>
-                <p>Health, Drugs</p>
+                <h5 class="fg-theme">Cooler Management App</h5>                
               </div>
             </div>
           </div>
-          <div class="grid-item apps ios wow zoomIn">
-            <div class="img-place" data-src="assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
-              <img src="assets/img/work/work-5.jpg" alt="">
+
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/mem.png" data-fancybox data-caption="<h5 class='fg-theme'>Cooler Management App</h5>">
+              <img src="assets/img/work/mem.png" alt="">
               <div class="img-caption">
-                <h5 class="fg-theme">Musics Discover</h5>
-                <p>Musics, Dashboard</p>
+                <h5 class="fg-theme">Cooler Management App</h5>                
               </div>
             </div>
           </div>
-          <div class="grid-item graphic ui-ux wireframes wow zoomIn">
-            <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
-              <img src="assets/img/work/work-6.jpg" alt="">
+
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/saleseye.png" data-fancybox data-caption="<h5 class='fg-theme'>Sales Management App</h5>">
+              <img src="assets/img/work/saleseye.png" alt="">
               <div class="img-caption">
-                <h5 class="fg-theme">Game Streaming</h5>
-                <p>Games, Streaming</p>
+                <h5 class="fg-theme">Sales Management App</h5>                
               </div>
             </div>
           </div>
-        </div> <!-- End gridder -->
-        <div class="text-center wow fadeInUp">
-          <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
-        </div>
+
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/sbl@work.png" data-fancybox data-caption="<h5 class='fg-theme'>HR App</h5>">
+              <img src="assets/img/work/sbl@work.png" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">HR App</h5>                
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item websites wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/Complexion.png" data-fancybox data-caption="<h5 class='fg-theme'>E-Commerce Wordpress Website</h5>">
+              <img src="assets/img/work/Complexion.png" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">E-Commerce Wordpress Website</h5>                
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- End gridder -->       
       </div>
-    </div> <!-- End Portfolio page -->
+    </div> 
+    <!-- End Portfolio page -->
     
     <!-- Page Blog -->
-    <div class="vg-page page-blog" id="blog">
+    <!-- <div class="vg-page page-blog" id="blog">
       <h1 class="text-center fg-dark wow fadeInUp">Latest Post</h1>
       <div class="container">
         <div class="row post-grid">
@@ -437,93 +468,69 @@
           </div>
         </div>
       </div>
-    </div> <!-- End page blog -->
+    </div>  -->
+    <!-- End page blog -->
     
     <!-- Page Contact -->
     <div class="vg-page page-contact" id="contact">
       <h1 class="text-center fg-dark wow fadeInUp">Contact</h1>
       <div class="container-fluid">
-        <div class="row py-5">
-          <div class="col-lg-7 wow zoomIn">
-            <div class="vg-maps">
-              <div id="google-maps" style="width: 100%; height: 100%;"></div>
-            </div>
-          </div>
-          <div class="col-lg-5">
+        <div class="row py-5">      
+          <div class="col-lg-12">
             <form class="vg-contact-form">
               <div class="form-row">
                 <div class="col-12 wow fadeInUp">
-                  <input class="form-control" type="text" name="Name" placeholder="Your Name">
+                  <input class="form-control" type="text" id="name" name="Name" placeholder="Your Name">
                 </div>
                 <div class="col-6 wow fadeInUp">
-                  <input class="form-control" type="text" name="Email" placeholder="Email Address">
+                  <input class="form-control" type="text" id="email" name="Email" placeholder="Email Address">
                 </div>
                 <div class="col-6 wow fadeInUp">
-                  <input class="form-control" type="text" name="Subject" placeholder="Subject">
+                  <input class="form-control" type="text" id="subject" name="Subject" placeholder="Subject">
                 </div>
                 <div class="col-12 wow fadeInUp">
-                  <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+                  <textarea class="form-control" id="message" name="Message" rows="6" placeholder="Enter message here.."></textarea>
                 </div>
-                <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
+                <button type="submit" onclick="sendEmail()" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </div> <!-- End page contact -->
+    </div> 
+    <!-- End page contact -->
     
     <!-- Footer -->
     <div class="vg-footer">
-      <h1 class="text-center">Virtual Folio</h1>
+      <h1 class="text-center">Moiz Waseem</h1>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 py-3">
-            <div class="footer-info">
-              <p>Where to find me</p>
-              <hr class="divider">
-              <p class="fs-large fg-white">1600 Amphitheatre Parkway Mountain View, California 94043 US</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3">
+        <div class="row">          
+
+          <div class="col-md-6 py-3">
             <div class="float-lg-right">
               <p>Follow me</p>
               <hr class="divider">
               <ul class="list-unstyled">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Youtube</a></li>
+                <li><a href="https://www.linkedin.com/in/moiz-waseem-b03537ba">LinkedIn</a></li>
+                <li><a href="https://github.com/moiz1994">Github</a></li>
+                <li><a href="https://www.instagram.com/moiz1740">Instagram</a></li>
+                <li><a href="https://www.facebook.com/Moiz1994">Facebook</a></li>                
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 py-3">
+
+          <div class="col-md-6 py-3">
             <div class="float-lg-right">
               <p>Contact me</p>
               <hr class="divider">
               <ul class="list-unstyled">
-                <li>info@virtual.com</li>
-                <li>+8890234</li>
-                <li>+813023</li>
+                <li>moizwaseem94@gmail.com</li>
+                <li>+92 333 7588041</li>                
               </ul>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-center mt-3">
-          <div class="col-12 mb-3">
-            <h3 class="fw-normal text-center">Subscribe</h3>
-          </div>
-          <div class="col-lg-6">
-            <form class="mb-3">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Email address">
-                <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
-              </div>
-            </form>
-          </div>
-          <div class="col-12">
-            <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a></p>
-          </div>
-        </div>
+
+        </div>        
       </div>
     </div> <!-- End footer -->
   </div> <!-- End main wrapper -->
@@ -535,7 +542,7 @@
   
   <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
   
-  <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <!-- <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script> -->
   
   <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
   
